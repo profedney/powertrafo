@@ -1,7 +1,11 @@
 # powertrafo
 Calculadora de Transformador de Força para Amplificadores Valvulados e outros tipos de fontes
 
-Passo 1: Verifique se o Python 3 está instalado no seu sistema. Se não estiver instalado, siga estas etapas para instalá-lo:
+Passo 1: Verifique se o Python 3 está instalado no seu sistema. 
+
+    python --version
+
+Se não estiver instalado, siga estas etapas para instalá-lo:
 
 Abra o navegador da web e vá para o site oficial do Python: https://www.python.org/downloads/windows/
 Role para baixo até a seção "Stable Releases" (Versões Estáveis) e baixe a versão mais recente do Python 3 para Windows. Certifique-se de escolher a versão de 64 bits, a menos que você tenha um motivo específico para usar a versão de 32 bits.
