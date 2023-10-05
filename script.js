@@ -26,6 +26,17 @@ function calcularPotenciaTotalSecundario() {
     return potenciaTotalSecundario;
 }
 
+function calcularSeccaoNucleo(F, Pw) {
+  // Fator de segurança (1.1) para garantir eficiência do transformador
+  const fatorSeguranca = 1.1;
+  
+  // Cálculo da seção transversal mínima do núcleo (Sg)
+  const Sg = fatorSeguranca * (7.5 * Math.sqrt(Pw) / F);
+  
+  return Sg;
+}
+
+
 // Função para calcular a potência do primário
 function calcularPotenciaPrimario(potenciaTotalSecundario) {
     return potenciaTotalSecundario * 1.1;
