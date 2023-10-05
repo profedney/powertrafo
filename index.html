@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Potência do Secundário</title>
+</head>
+<body>
+    <h1>Calculadora de Potência do Secundário</h1>
+    <form id="formulario">
+        <table>
+            <thead>
+                <tr>
+                    <th>Enrolamento Secundário</th>
+                    <th>Tensão Secundária (V)</th>
+                    <th>Corrente Secundária (A)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><input type="number" class="tensao" step="0.1"></td>
+                    <td><input type="number" class="corrente" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="number" class="tensao" step="0.1"></td>
+                    <td><input type="number" class="corrente" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="number" class="tensao" step="0.1"></td>
+                    <td><input type="number" class="corrente" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><input type="number" class="tensao" step="0.1"></td>
+                    <td><input type="number" class="corrente" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><input type="number" class="tensao" step="0.1"></td>
+                    <td><input type="number" class="corrente" step="0.01"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" onclick="calcularPotencia()">Calcular Potência</button>
+    </form>
+    <p>A potência total do secundário é: <span id="resultado"></span> </p>
+    <p>A potência do primário é: <span id="potencia-primario"></span> </p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
