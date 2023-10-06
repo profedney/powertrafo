@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Transformadores de Força</title>
+</head>
+<body>
+    <h1>Calculadora de Transformadores de Força</h1>
+    <form id="transformerForm">
+        <label for="vp1">Tensão Primária (Vp1):</label>
+        <input type="number" id="vp1" name="vp1" value="127" required><br><br>
+
+        <label for="vp2">Tensão Primária Adicional (Vp2):</label>
+        <input type="number" id="vp2" name="vp2" value="93"><br><br>
+
+        <label for="vs1">Tensão Secundária 1 (Vs1):</label>
+        <input type="number" id="vs1" name="vs1" required><br><br>
+
+        <label for="is1">Corrente Secundária 1 (Is1):</label>
+        <input type="number" id="is1" name="is1" required><br><br>
+
+        <label for="vs2">Tensão Secundária 2 (Vs2):</label>
+        <input type="number" id="vs2" name="vs2"><br><br>
+
+        <label for="is2">Corrente Secundária 2 (Is2):</label>
+        <input type="number" id="is2" name="is2"><br><br>
+
+        <label for="vs3">Tensão Secundária 3 (Vs3):</label>
+        <input type="number" id="vs3" name="vs3"><br><br>
+
+        <label for="is3">Corrente Secundária 3 (Is3):</label>
+        <input type="number" id="is3" name="is3"><br><br>
+
+        <label for="vs4">Tensão Secundária 4 (Vs4):</label>
+        <input type="number" id="vs4" name="vs4"><br><br>
+
+        <label for="is4">Corrente Secundária 4 (Is4):</label>
+        <input type="number" id="is4" name="is4"><br><br>
+
+        <label for="vs5">Tensão Secundária 5 (Vs5):</label>
+        <input type="number" id="vs5" name="vs5"><br><br>
+
+        <label for="is5">Corrente Secundária 5 (Is5):</label>
+        <input type="number" id="is5" name="is5"><br><br>
+
+        <label for="f">Frequência de Operação (F):</label>
+        <input type="number" id="f" name="f" value="60" required><br><br>
+
+        <label for="bm">Densidade de Fluxo ou Indução Magnética (Bm):</label>
+        <input type="number" id="bm" name="bm" value="11000"required><br><br>
+
+        <label for="eta">Rendimento Desejado (%)</label>
+        <input type="number" id="eta" name="eta" value="90" required><br><br>
+
+        <label for="dc">Densidade de Corrente (DC):</label>
+        <input type="number" id="dc" name="dc" value="3.0" required><br><br>
+
+        <button type="button" onclick="calcularTransformador()">Calcular</button>
+    </form>
+
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularTransformador() {
+            // Obter os valores dos campos do formulário
+            const vp1 = parseFloat(document.getElementById('vp1').value);
+            const vp2 = parseFloat(document.getElementById('vp2').value || 0);
+            const vs1 = parseFloat(document.getElementById('vs1').value);
+            const is1 = parseFloat(document.getElementById('is1').value);
+            const vs2 = parseFloat(document.getElementById('vs2').value || 0);
+            const is2 = parseFloat(document.getElementById('is2').value || 0);
+            const vs3 = parseFloat(document.getElementById('vs3').value || 0);
+            const is3 = parseFloat(document.getElementById('is3').value || 0);
+            const vs4 = parseFloat(document.getElementById('vs4').value || 0);
+            const is4 = parseFloat(document.getElementById('is4').value || 0);
+            const vs5 = parseFloat(document.getElementById('vs5').value || 0);
+            const is5 = parseFloat(document.getElementById('is5').value || 0);
+            const f = parseFloat(document.getElementById('f').value);
+            const bm = parseFloat(document.getElementById('bm').value);
+            const eta = parseFloat(document.getElementById('eta').value);
+            const dc = parseFloat(document.getElementById('dc').value);
+
+            // Realizar os cálculos aqui
+            // ...
+
+            // Exibir o resultado
+            const resultado = document.getElementById('resultado');
+            resultado.textContent = "O resultado dos cálculos será exibido aqui.";
+        }
+    </script>
+</body>
+</html>
